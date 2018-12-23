@@ -1,0 +1,108 @@
+
+SLUGBOT TODO
+
+User Data:
+  ☐ viewable profiles for users containing rep, score, rank, builds etc
+Member Events:
+  ☐ Link twitch channel if a discord>twitch link is made.
+  ☐ Add locations (with screenshots) for playable areas without bonfires
+
+Activity Data:
+
+music:
+  ☐ music queue
+  ☐ play, pause, skip, volume
+
+Word Censor:
+
+ds3 builds:
+  ☐ let mods stop builds from displaying in their servers. (does not remove the build from the db)
+
+DS3 Tools:
+  ☐ collect all DS3 weapon data and add to DB
+    ☐ Weapon art motionValues
+    ☐ poise health multipliers and poise damage
+    ☐ frame data
+  ☐ user can enter strength, dex, int, faith and get a list of weapons they can use with their AR
+
+Commands:
+  User or mod commands for slugbot
+  ☐ Add way to limit who can use commands
+  ☐ Better way to list roles for !constraint
+  custom commands:
+  weapon:
+   ☐ Show spellbuff for catalysts instead of R1 damage
+   ☐ Make sure crit damage is calculated without str 1.5 mult
+   ☐ Show shield stability
+   ☐ Menu for poise data
+   ☐ Synonym lookup
+   ☐ find best stat spread for specific weapon
+   ☐ find best infusion for weapon given specific stats
+  Reminders:
+   ☐ Allow users to set reminders for themselves. SlugBot will DM them with the reminder.
+   ☐ Save reminder time to db. check db every 5 minutes. Cache reminder time in memory if it is due in less than 5 minutes.
+   ☐ Allow twitch mods to add periodic reminders that display every x minutes in chat.
+   ☐ Dont find docs for periodic twitch reminders if stream is not live.
+
+Twitch:
+    ☐ Prompt user to link twitch if they haven't.
+
+Bugs:
+  ☐ Location images not displaying for DS1 member events.
+  ☐ Unmuting stops working at seemingly random times.
+  ☐ builds not accept +0 weapons
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+ ✔ Add way to limit which channels commands can be used in @done (18-12-21 01:25) @project(Commands)
+ ✔ sort out broken names in !weapon (lothric sword) @done (18-12-17 01:59) @project(Bugs)
+ ✔ scaling coefficients @done (18-12-17 01:58) @project(DS3 Tools)
+ ✔ curve indexes @done (18-12-17 01:58) @project(DS3 Tools)
+ ✔ crit motionValues @done (18-12-17 01:58) @project(DS3 Tools)
+ ✔ base damage @done (18-12-17 01:58) @project(DS3 Tools)
+ ✔ Attack motionValues @done (18-12-17 01:58) @project(DS3 Tools)
+ ✔ rep system: allow users to give other users rep once a day @done (18-12-11 16:03) @project(User Data)
+ ✔ Add the ability to get statistical info on dice rolls with !roll. @done (18-12-09 03:16) @project(DS3 Tools)
+ ✔ Add member to streamer list if they link their accounts after getting the streamer role @done (18-12-07 23:37) @project(Twitch)
+ ✔ discord users with a streamer role will automatically have their streams displayed in the #stream channel (as long as their accounts are linked). @done (18-12-07 23:35) @project(Twitch)
+ ✔ Improve location parsing. (string similarity maybe?) @done (18-12-07 23:34) @project(Member Events)
+ ✔ Delete old reminder when a new one is sent @done (18-12-07 19:34) @project(Member Events)
+ ✘ Make reaction buttons durationless. (use onReactionAdd event) @cancelled (18-12-06 03:39) @project(ds3 builds)
+ ✔ Graph activity data per member. @done (18-11-21 22:42) @project(Activity Data)
+ ✔ Graph activity data per channel. @done (18-11-21 22:42) @project(Activity Data)
+ ✔ Display data on emote usage. @done (18-11-21 22:42) @project(Activity Data)
+ ✔ add replacement flag for username @done (18-11-19 00:20) @project(Commands / custom commands)
+ ✔ add replacement flag for increment value. @done (18-11-19 00:20) @project(Commands / custom commands)
+ ✔ Store incremental value in customCommand document in db @done (18-11-19 00:20) @project(Commands / custom commands)
+ ✔ port twitch channel builds over to global userData builds @done (18-11-16 03:58) @project(ds3 builds)
+ ✔ let discord users link their twitch accounts @done (18-11-16 03:57) @project(User Data)
+ ✔ generate temp userData from twitchChan data. merge with other userData if discord<>twitch link is made @done (18-11-16 03:57) @project(User Data)
+ ✔ create userData when new member joins server if needed @done (18-11-16 00:15) @project(User Data)
+ ✔ create useData when new twitchChan data is created if needed @done (18-11-16 00:15) @project(User Data)
+ ✔ generate userData from memberData @done (18-11-16 00:13) @project(User Data)
+ ✔ compact participant list if it gets too long @done (18-11-15 02:36) @project(Member Events)
+ ✔ Give better feedback if build processing fails. @done (18-11-15 02:36) @project(ds3 builds)
+ ✔ Display participants builds in participant list if possible @done (18-11-15 02:36) @project(Member Events)
+ ✔ Sync participants across all servers. @done (18-11-15 02:35) @project(Member Events)
+ ✔ Allow mods to add regex filters that, when matched, flag the message for deletion @done (18-11-14 03:29) @project(Word Censor)
+ ✘ Delete messages containing discord invites @cancelled (18-11-14 03:28) @project(Word Censor)
+ ✔ port current build to be stored in userData instead of memberData @done (18-11-13 17:26) @project(ds3 builds)
+ ✔ twitch !build uses userData if available and twitchData if not @done (18-11-13 17:24) @project(ds3 builds)
+ ✔ twitch !setbuild saves to userData if one is linked to a discord account @done (18-11-13 17:16) @project(ds3 builds)
+ ✔ discord !build uses userData @done (18-11-13 17:04) @project(ds3 builds)
+ ✔ discord !setbuild saves to userData @done (18-11-13 17:01) @project(ds3 builds)
+ ✔ Show poise in armour field. @done (18-11-13 16:51) @project(ds3 builds)
+ ✔ Use member's set build to fill in blank member event info if possible @done (18-11-05 18:09) @project(Member Events)
+ ✔ Collect emote usage data. @done (18-11-05 18:09) @project(Activity Data)
+ ✔ Add basic word censoring for build names. @done (18-11-05 18:09) @project(ds3 builds)
+ ✔ store expanded filter word list in database @done (18-11-05 18:08) @project(Word Censor)
+ ✔ let moderators add and remove filter words @done (18-11-05 18:07) @project(Word Censor)
+ ✔ Use only one reactionCollector per msg @done (18-11-03 20:00) @project(ds3 builds)
+ ✔ Way to display a member's build list. @done (18-10-31 15:42) @project(ds3 builds)
+ ✔ Allow discord members to set their current build @done (18-10-30 20:10) @project(ds3 builds)
+ ✔ Allow discord members to delete builds from their list @done (18-10-30 20:10) @project(ds3 builds)
+ ✔ Allow discord members to add their builds to a personal build list @done (18-10-30 20:10) @project(ds3 builds)
+ ✔ Graph activity data per guild. @done (18-10-30 03:11) @project(Activity Data)
+ ✔ Whenever a soulsPlanner link is sent in a message, add reactions that allow users to preview the build either in a richEmbed or as a screenshot of the page. @done (18-10-30 03:10) @project(ds3 builds)
+ ✔ Location images not displaying for DS3 member events. @done (18-10-30 02:51) @project(Bugs)
+ ✔ Sync member events across all servers shared with slugbot. @done (18-10-26 05:09) @project(Member Events)
