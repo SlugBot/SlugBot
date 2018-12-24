@@ -6,9 +6,10 @@ If you'd like to support SlugBot development you can buy The Slug a ~~beer~~ cof
 
 [![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/G2G0NP0R)
 
-Join the SlugBot discord to get a direct line of communication with the dev for suggestions and bug reports.
+Join the SlugBot discord to get a direct line of communication with the dev for suggestions and bug reports. 
+Click the widget below to join.
 
-[![discord](https://img.shields.io/discord/451495220438106112.svg?style=for-the-badge)](https://discord.gg/Tpm2X2b)
+[![discord](https://img.shields.io/discord/451495220438106112.svg?style=for-the-badge&logo=discord&colorB=7289DA)](https://discord.gg/Tpm2X2b)
 
 ## Overview
 [placeholder]
