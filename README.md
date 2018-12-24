@@ -5,6 +5,9 @@ SlugBot Also covers general admin functionality, with Discord server logging, mu
 If you'd like to support SlugBot development you can buy The Slug a ~~beer~~ coffee on ko-fi.com!
 [![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/G2G0NP0R)
 
+Join the SlugBot discord to get a direct line of communication with the dev for suggestions and bug reports.
+<iframe src="https://discordapp.com/widget?id=451495220438106112&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+
 ## Overview
 [placeholder]
 ### SlugBot in Discord
