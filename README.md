@@ -5,15 +5,23 @@ SlugBot Also covers general admin functionality, with Discord server logging, mu
 If you'd like to support SlugBot development you can buy The Slug a ~~beer~~ coffee on ko-fi.com!
 [![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/G2G0NP0R)
 
----
-
 ## Overview
-
+[placeholder]
 ### SlugBot in Discord
+[placeholder]
+#### Setup
+[placeholder]
+#### Commands
+[placeholder]
+
 
 ### SlugBot in Twitch
+[placeholder]
+#### Setup
+[placeholder]
+#### Commands
+[placeholder]
 
----
 
 ## TODO list
 
@@ -44,8 +52,10 @@ If you'd like to support SlugBot development you can buy The Slug a ~~beer~~ cof
  - [x] Graph activity data per channel. @done (18-11-21 22:42)
 
 ### music:
- - [ ] music queue
- - [ ] play, pause, skip, volume
+ - [ ] Music queue.
+ - [ ] Play, pause, skip, volume.
+ - [ ] Mod override.
+ - [ ] User permissions.
 
 ### Word Censor:
  - [x] let moderators add and remove filter words @done (18-11-05 18:07)
@@ -86,25 +96,30 @@ If you'd like to support SlugBot development you can buy The Slug a ~~beer~~ cof
 ### Commands:
   User or mod commands for slugbot
  - [x] Add way to limit which channels commands can be used in @done (18-12-21 01:25)
- - [ ] Add way to limit who can use commands
- - [ ] Better way to list roles for !constraint
- #### custom commands:
+ - [ ] Add way to limit who can use commands.
+ - [ ] Better way to list roles for !constraint.
+ #### Custom Commands:
   - [x] Store incremental value in customCommand document in db @done (18-11-19 00:20)
   - [x] add replacement flag for increment value. @done (18-11-19 00:20)
-  - [x] add replacement flag for username @done (18-11-19 00:20)
- #### weapon:
-  - [ ] Show spellbuff for catalysts instead of R1 damage
-  - [ ] Make sure crit damage is calculated without str 1.5 mult
-  - [ ] Show shield stability
-  - [ ] Menu for poise data
-  - [ ] Synonym lookup
-  - [ ] find best stat spread for specific weapon
-  - [ ] find best infusion for weapon given specific stats
+  - [x] add replacement flag for username. @done (18-11-19 00:20)
  #### Reminders:
   - [ ] Allow users to set reminders for themselves. SlugBot will DM them with the reminder.
   - [ ] Save reminder time to db. check db every 5 minutes. Cache reminder time in memory if it is due in less than 5 minutes.
   - [ ] Allow twitch mods to add periodic reminders that display every x minutes in chat.
   - [ ] Dont find docs for periodic twitch reminders if stream is not live.
+ #### !help:
+  - [ ] Separate !commands and !help. display only functional commands in !help. display custom commands with !commands.
+  - [ ] Improve !help message. use hover-over link embeding.
+  - [ ] Clickable link for each command linking to this page.
+ #### !weapon:
+  - [ ] Show spellbuff for catalysts instead of R1 damage.
+  - [ ] Account for attack damage type when calculating approx damage.
+  - [ ] Make sure crit damage is calculated without str 1.5 mult.
+  - [ ] Show shield stability.
+  - [ ] Menu for poise data.
+  - [ ] Synonym lookup.
+  - [ ] find best stat spread for specific weapon.
+  - [ ] find best infusion for weapon given specific stats.
 
 ### Twitch:
  - [x] discord users with a streamer role will automatically have their streams displayed in the #stream channel (as long as their accounts are linked). @done (18-12-07 23:35)
