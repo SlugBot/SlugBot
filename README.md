@@ -1,14 +1,19 @@
 # SlugBot
-Slugbot is a Discord and Twitch.tv bot primarily focused on enhancing Dark Souls communities. 
+Slugbot is a Discord and Twitch.tv bot primarily focused on, but not limited to, enhancing Dark Souls communities. 
 SlugBot Also covers general admin functionality, with Discord server logging, muting, role assignment, Twitch stream notifications, follows and more!
 
-If you'd like to support SlugBot development you can buy The Slug a ~~beer~~ coffee on ko-fi.com!</br>
+If you'd like to support SlugBot development you can buy The Slug a ~~beer~~ coffee on ko-fi.com!
 [![ko-fi](https://www.ko-fi.com/img/donate_sm.png)](https://ko-fi.com/G2G0NP0R)
 
-</br>
+---
+
+## Overview
+
+### SlugBot in Discord
+
+### SlugBot in Twitch
 
 ---
-</br>
 
 ## TODO list
 
